@@ -1,0 +1,62 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat";
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+$breakpoints: (
+  "tablet": 768px,
+  "laptop": 992px,
+  "desktop": 1300px,
+);
+@mixin mq($width, $type: min) {
+  @if map_has_key($breakpoints, $width) {
+    $width: map_get($breakpoints, $width);
+    @if $type == max {
+      $width: $width - 1px;
+    }
+    @media only screen and (#{$type}-width: $width) {
+      @content;
+    }
+  }
+}
+
+// generic styles for all pages
+
+.container {
+  width: 100%;
+  padding: 0 20px;
+
+  @include mq("tablet") {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  @include mq("laptop") {
+    width: 992px;
+  }
+
+  @include mq("desktop") {
+    width: 1300px;
+  }
+}
+
+// typography
+
+h1 {
+}
+
+h2 {
+}
+
+h3 {
+}
+
+// links

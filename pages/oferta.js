@@ -1,17 +1,17 @@
 import Head from "next/head";
 
-export default function Home() {
+export default function Oferta() {
   return (
     <div>
       <Head>
-        <title>katowice.dev - strony internetowe katowice</title>
+        <title>oferta - katowice.dev - strony internetowe katowice</title>
         <meta
           name="description"
           content="Strony Internetowe Katowice. Tworzymy szybkie strony internetowe WordPress oraz JAMstack"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <p>elo</p>
+      <p>oferta</p>
     </div>
   );
 }
