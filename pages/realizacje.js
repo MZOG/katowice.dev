@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Container from "../components/container";
 
 export default function Realizacje() {
   return (
@@ -11,7 +12,9 @@ export default function Realizacje() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <p>realizacje</p>
+      <Container>
+        <p>realizacje</p>
+      </Container>
     </div>
   );
 }

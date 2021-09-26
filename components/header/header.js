@@ -32,14 +32,14 @@ export default function Header() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/">
+                  <Link href="/kontakt">
                     <a>kontakt</a>
                   </Link>
                 </li>
               </ul>
             </nav>
             <div className={styles.header_quote}>
-              <Link href="/">
+              <Link href="/darmowa-wycena-strony-internetowej">
                 <a>darmowa wycena</a>
               </Link>
             </div>

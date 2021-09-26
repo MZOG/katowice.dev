@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Container from "../components/container";
 
 export default function Oferta() {
   return (
@@ -11,7 +12,9 @@ export default function Oferta() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <p>oferta</p>
+      <Container>
+        <p>oferta</p>
+      </Container>
     </div>
   );
 }

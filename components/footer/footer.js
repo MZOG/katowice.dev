@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <Container>
-        <p>elo</p>
+        <p>footer.js - todo</p>
       </Container>
     </footer>
   );
