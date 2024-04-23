@@ -1,13 +1,14 @@
 
 type ContainerProps = {
-  type: "section" | "div",
+  type?: "section" | "div",
+  width?: string,
   children: JSX.Element
 }
 
-const Container = ({ type, children }: ContainerProps) => {
+const Container = ({ type, width, children }: ContainerProps) => {
   if (type === "section") {
     return (
-      <section>
+      <section className="px-5 mx-auto max-w-7xl">
         {children}
       </section>
     )

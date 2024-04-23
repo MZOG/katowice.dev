@@ -1,7 +1,9 @@
-import Image from "next/image";
+import Container from "@/components/Container";
 
 export default function Home() {
   return (
-    <p>elo</p>
+    <Container type="section">
+      <p>elko</p>
+    </Container>
   );
 }
