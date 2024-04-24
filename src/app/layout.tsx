@@ -1,8 +1,16 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
+import { Inter as FontSans } from "next/font/google"
+import { cn } from "@/lib/utils"
 
-const inter = Inter({ subsets: ["latin"] });
+import { AuroraBackground } from "@/components/ui/background";
+
+import Header from "@/components/header"
+
+const fontSans = FontSans({
+  subsets: ["latin"],
+  variable: "--font-sans",
+})
 
 export const metadata: Metadata = {
   title: "Strony Internetowe Katowice",
@@ -18,10 +26,15 @@ export default function RootLayout({
 }: RootProps) {
   return (
     <html lang="pl">
-      <body className={inter.className}>
-        <main>
-        {children}
-        </main>
+      <body
+        className={cn(
+          "overflow-x-hidden font-sans antialiased",
+          fontSans.variable
+        )}
+      >
+        <AuroraBackground>
+          <main className="z-10">{children}</main>
+        </AuroraBackground>
       </body>
     </html>
   );
